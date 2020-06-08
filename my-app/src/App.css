@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -6,13 +8,78 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-container {
+  width:100% !important;
+  height:700px !important;
+}
+.picA{
+  background-image: url("./assets/rightone.jpg");
+}
+.picB{
+  background-image: url("./assets/lamina2.jpg");
+}
+.picC{
+  background-image: url("./assets/lamina3.jpg");
+}
+.picD{
+  background-image: url("./assets/lamina4.jpg");
+}
+.picE{
+  background-image: url("./assets/lamina5.jpg");
+}
+.picF{
+  background-image: url("./assets/lamina6.jpg");
+}
+.picG{
+  background-image: url("./assets/lamina7.jpg");
+}
+.picZ {
+  background: -webkit-linear-gradient(left, rgba(255,76,85,1) 0%, rgba(255,146,10,1) 100%);
+  width:1400px;
+  height:700px;
+}
+.pic-first {
+  width: 450px;
+  height:450px;
+}
+.header-p {
+color:white ;
+margin-top:20px;
+font-weight: 700;
 }
 
+.pic-first-margin {
+    margin-top:50px;
+}
+
+
+.subtitle-first-container {
+    font-size: 25px;
+    margin-top:34px;
+    color: 'grey';
+}
+.title-first-container {
+  font-size:50px;
+}
+
+
+
+.header-bottom {
+  width:153px;
+  height:30px;
+  border-color:transparent;
+  border-radius:20px;
+  color: orange;
+  margin-top:20px;
+}
+.margin-title {
+  margin-top:140px;
+}  
+
+.fix-row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
