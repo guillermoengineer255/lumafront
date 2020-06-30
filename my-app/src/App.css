@@ -56,6 +56,9 @@
   width:1400px;
   height:700px;
 }
+.container-system {
+  background: #E8E8E8 !important;
+}
 .picz-title{
   text-align: center;
   font-size: 40px;
@@ -135,6 +138,7 @@
 }
 .header-p {
 color:white ;
+cursor:pointeR;
 margin-top:20px;
 font-weight: 700;
 font-size:18px;
@@ -179,6 +183,10 @@ font-size:18px;
   margin-right: 0px;
   margin-left: 0px;
 }
+.header-logo {
+  width: 395px;
+   height: 149px;
+}
 
 .background-grey {
   margin-top: 14px;
@@ -221,6 +229,24 @@ font-size:18px;
    color: rgb(39, 33, 33);
     font-weight: 700 
 }
+.input-footer {
+width:200px;
+height:30px;
+border-color:transparent;
+}
+.div-row-footer {
+  display: inline-flex;
+}
+
+.button-footer {
+  background: -webkit-linear-gradient(left, rgba(255,76,85,1) 0%, rgba(255,146,10,1) 100%);
+  color: white;
+  font-weight: 700;
+  width: 200px;
+  height: 30px;
+  border-color: transparent;
+  border-radius: 5px;
+}
 
 .div-business-picture { 
   text-align: center;
@@ -231,7 +257,8 @@ font-size:18px;
    padding: 0px 10px 10px 10px;
 }
 .padding-business-intelligence {
-  padding-top:48px;
+  padding-top:48px !important;
+
 }
 .amazon-p{
   font-weight: 700;

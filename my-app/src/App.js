@@ -13,27 +13,21 @@ import mastercard from './mastercard-seeklogo.com.svg';
 import zelle from './zelle.svg';
 import amazon from './amazon2.svg';
 import amazon2 from './amazon.svg';
-
 import uber from './uber.svg';
 import facebook from './facebook.svg';
 import netflix from './netflix.svg';
 import instagram from './instagram.svg';
 import walmart from './walmart.svg';
-import bolivares from './bolivares.svg';
+import bolivares from './soberanos.svg';
 import visa from './visa.svg';
 import american from './americanexpress.svg';
 import business from './business.svg';
 import apple from './apple.svg';
 import twitter from './twitter2.svg';
 import whatsapp from './whatsapp.svg';
-import menu from './menu.svg';
+import capa2 from './capa22.png';
 import marketing2 from './marketing.svg';
-import seo from './seo.svg';
-
-
-
-
-
+import marketing3 from './ecommerce.png';
 
 
 function App() {
@@ -43,13 +37,13 @@ function App() {
         <header>
           <Row className="fix-row" >
             <Col md={5}>
-              <img src={logo} /></Col>
+              <img src={marketing3} className="header-logo" /></Col>
             <Col md={2} >
               <p className="header-p">Canales de Venta</p></Col>
             <Col md={1} >
               <p className="header-p"> Vitrina </p> </Col>
             <Col md={1} >
-              <p className="header-p">Precios </p> </Col>
+            </Col>
             <Col md={2} >
               <button className="header-bottom"> Inscribete gratis </button>
             </Col>
@@ -68,17 +62,21 @@ function App() {
           </Col>
         </Row>
       </div>
+      <div className="div-container container-system">
+        <Row className="fix-row">
+          <Col md={12} style={{ textAlign: 'center' }}>
+            <img src={capa2} style={{ marginTop: '20px' }} />
+          </Col>
+        </Row>
+      </div>
       <div className="div-container picZ">
         <Row className="fix-row">
-          <h1 className="picz-title"> Crecer más rápido</h1>
+          <h1 className="picz-title"> Acelera tu crecimiento de ventas</h1>
           <Col md={2}>  </Col>
           <Col md={8}>
             <h5 className="picz-subtitle"> Haz crecer tu negocio con opciones de pago y
                 envíos locales! Ahorra dinero, vende más y cumple
                 tu sueño de crear tu propia Tienda Online...
-                envíos locales! Ahorra dinero, vende más y cumple
-                tu sueño de crear tu propia Tienda Online...envíos locales! Ahorra dinero, vende más y cumple
-                tu sueño de crear tu propia Tienda Online...envíos locales! Ahorra dinero, vende más y cumple
             </h5>
           </Col>
           <Col md={2}>  </Col>
@@ -204,17 +202,15 @@ function App() {
               <p className="logos-p">  Nuestra plataforma está construida con las tecnologias que utilizan las mejores
               empresas del mundo. </p>
               <a> <p className="read-more"> Leer más</p> </a>
-
             </div>
           </Col>
           <Col lg={6} >
             <div className="background-orange">
               <div className="div-business-picture">
-                <img src={marketing2}  className="bmarketing-logo" />
+                <img src={marketing2} className="marketing-logo" />
               </div>
               <p className="business-p"> Marketing Digital</p>
               <a > <p className="read-more"> Leer más</p> </a>
-
             </div>
           </Col>
         </Row>
@@ -250,9 +246,9 @@ function App() {
             <p className="footer-p">Empieza ahora</p>
           </Col>
           <Col lg={7} >
-            <div style={{ display: 'inline-flex' }}>
-              <input style={{ width: '200px', height: '30px', borderColor: 'transparent' }} placeholder="Ingresa tu direccion de email" />
-              <button value="Comienza ahora" name="dcdscd" style={{ color: 'white', fontWeight: '700', background: '-webkit-linear-gradient(left, rgba(255,76,85,1) 0%, rgba(255,146,10,1) 100%)', width: '200px', height: '30px', borderColor: 'transparent', borderRadius: '5px' }}>Comienza ahora </button>
+            <div className="div-row-footer">
+              <input className="input-footer" placeholder="Ingresa tu direccion de email" />
+              <button value="Comienza ahora" name="dcdscd" className="button-footer">Comienza ahora </button>
             </div>
           </Col>
         </Row>
