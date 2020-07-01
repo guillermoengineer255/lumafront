@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import imagen from './assets/firstmarket.png';
 import imagen2 from './assets/secondmarket.png';
@@ -26,22 +26,63 @@ import apple from './apple.svg';
 import twitter from './twitter2.svg';
 import whatsapp from './whatsapp.svg';
 import capa2 from './capa22.png';
+import capa3 from './mobile4.png';
+import orderm from './order-picture.png';
+import webmodule from './web-module.png';
+import catalogModule from './catalog-module.png';
+import financialmodule from './financial-module.png';
 import marketing2 from './marketing.svg';
 import marketing3 from './ecommerce.png';
 
-
 function App() {
+
+  const clickButton = () => {
+    window.scrollTo({ top: 2000, behavior: "smooth" })
+  }
+  const showOrderModuleFunction = () => {
+    setShowOrder(true);
+    setShowWebModule(false);
+    setShowFinancial(false);
+    setShowCatalog(false);
+  }
+  const showWebModuleFunction = () => {
+    setShowWebModule(true);
+    setShowOrder(false);
+    setShowCatalog(false);
+    setShowFinancial(false);
+  }
+  const showFinancialFunction = () => {
+    setShowFinancial(true);
+    setShowWebModule(false);
+    setShowOrder(false);
+    setShowCatalog(false);
+  }
+  const showCatalogFunction = () => {
+    setShowCatalog(true);
+    setShowFinancial(false);
+    setShowWebModule(false);
+    setShowOrder(false);
+  }
+
+  const [showOrder, setShowOrder] = useState(true)
+  const [showWebModule, setShowWebModule] = useState(false)
+  const [showfinancial, setShowFinancial] = useState(false)
+  const [showCatalog, setShowCatalog] = useState(false)
+
   return (
     <div>
       <div className="div-container picA">
         <header>
           <Row className="fix-row" >
             <Col md={5}>
-              <img src={marketing3} className="header-logo" /></Col>
+              <a onClick={() => clickButton()}>
+                <img src={marketing3} className="header-logo" />
+              </a>
+            </Col>
             <Col md={2} >
-              <p className="header-p">Canales de Venta</p></Col>
+              <p className="header-p" onClick={() => clickButton()}>Canales de Venta</p></Col>
             <Col md={1} >
-              <p className="header-p"> Vitrina </p> </Col>
+              <p className="header-p" onClick={() => clickButton()}> Vitrina </p> </Col>
             <Col md={1} >
             </Col>
             <Col md={2} >
@@ -65,18 +106,62 @@ function App() {
       <div className="div-container container-system">
         <Row className="fix-row">
           <Col md={12} style={{ textAlign: 'center' }}>
-            <img src={capa2} style={{ marginTop: '20px' }} />
+            <img src={capa3} style={{ marginTop: '20px' }} />
+          </Col>
+        </Row>
+      </div>
+      <div className="div-container container-system">
+        <Row className="fix-row">
+          <Col md={12} >
+            <h1 className="title-module-content">La solución para vender online. </h1>
+          </Col>
+          <Col md={1}>
+
+          </Col>
+          <Col md={5}>
+            <div onClick={() => showOrderModuleFunction()} className="div-content">
+              <p className="p-content"><strong> Order management</strong></p>
+              <p>Puedes visualizar a travez del módulo de ordenes
+                toda la informacion de las ordenes de compras emitidas por los clientes.
+            </p>
+            </div>
+            <div onClick={() => showWebModuleFunction()} className="div-content">
+              <p className="p-content"><strong>Web management</strong></p>
+              <p>Administra toda la página principal de tu comercio electronico, de manera sencilla
+                e intuitiva desde el módulo web.
+            </p>
+            </div>
+
+            <div onClick={() => showCatalogFunction()} className="div-content">
+              <p className="p-content"><strong>Catalog management</strong></p>
+              <p>Gestiona todos tus producto, desde la imagen que tendrá en la web, hasta el precio en distintas divisas
+            </p>
+            </div>
+            <div onClick={() => showFinancialFunction()} className="div-content">
+              <p className="p-content"><strong>Financial management</strong></p>
+              <p>Visualiza y gestiona todos
+                 los pagos que emitan los clientes desde transferencias internacionales, Zelle y hasta pagos en bolívares.
+            </p>
+            </div>
+          </Col>
+          <Col md={6} className="col-conditional-pictures">
+            <div className="conditional-pictures-div">
+              {showOrder && <img src={orderm} className="conditional-pictures" />}
+              {showWebModule && <img src={webmodule} className="conditional-pictures" />}
+              {showCatalog && <img src={catalogModule} className="conditional-pictures" />}
+              {showfinancial && <img src={financialmodule} className="conditional-pictures"/>}
+            </div>
           </Col>
         </Row>
       </div>
       <div className="div-container picZ">
         <Row className="fix-row">
-          <h1 className="picz-title"> Acelera tu crecimiento de ventas</h1>
+          <h1 className="picz-title"> Acelera tu crecimiento de ventas.</h1>
           <Col md={2}>  </Col>
           <Col md={8}>
-            <h5 className="picz-subtitle"> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                tu sueño de crear tu propia Tienda Online...
+            <h5 className="picz-subtitle">
+               Desde tus redes sociales linkea tus historias al a la página del producto a promocionar 
+               y en instantes empieza a recibir pagos desde dispositivos móviles.
             </h5>
           </Col>
           <Col md={2}>  </Col>
@@ -91,15 +176,13 @@ function App() {
       </div>
       <div className="div-container picC">
         <Row className="fix-row">
-          <h1 className="picC-title"> Empieza a recibir pagos internacionales </h1>
+          <h1 className="picC-title"> Empieza a recibir pagos internacionales. </h1>
           <Col md={2}>  </Col>
           <Col md={8}>
-            <h5 className="picC-subtitle"> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...
-                    envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...envíos locales! Ahorra dinero, vende más y cumple
-                    </h5>
+            <h5 className="picC-subtitle"> 
+            En la plataforma Lumarketo puedes configurar tus módulos de pagos para empezar a recibir
+            pagos con tarjetas internacionales, Zelle y pagos en Bolivares. Sin limitaciones para los metodos de pagos electrónicos.
+            </h5>
             <div className="div-payment">
               <img src={bolivares} className="bs-picture" />
               <img src={paypal} className="paypal-zelle-uber-picture div-payment-space" />
@@ -112,78 +195,6 @@ function App() {
           <Col md={2}>  </Col>
         </Row>
       </div>
-      {/* <div className="div-container picB">
-        <h1 style={{ textAlign: 'center', fontSize: '40px' }}> Las 6 razones principales porque los comerciantes eligen a Lumarketo</h1>
-        <Row className="fix-row">
-          <Col md={1} >
-          </Col>
-          <Col md={6} style={{ marginTop: '140px' }}>
-            <h1 style={{ fontSize: '50px', color: '#FF7500', fontWeight: '700' }}>Pagos internacionales como en Bolivares</h1>
-            <h5 style={{ fontSize: '25px', marginTop: '34px', color: 'grey' }}> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...</h5>
-          </Col>
-          <Col md={5} style={{ marginTop: '100px' }} >
-            <img src={imagen3} style={{ width: '450px', height: '450px' }} />
-          </Col>
-        </Row>
-      </div> */}
-
-
-      {/* <div className="div-container picE">
-        <Row className="fix-row">
-          <h1 style={{ color: 'black', textAlign: 'center' }}></h1>
-          <Col lg={1}></Col>
-          <Col lg={6} style={{ marginTop: '100px' }} >
-            <h5 className="subtitle-first-container" style={{ color: 'black', lineHeight: '39px' }}> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                tu sueño de crear tu propia Tienda Online...
-                Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                tu sueño de crear tu propia Tienda Online...</h5>
-          </Col>
-          <Col lg={5} className="pic-first-margin" >
-            <img src={imagen} className="pic-first" style={{ height: '400px', width: '400px' }} />
-          </Col>
-        </Row>
-      </div> */}
-
-
-      {/* <div className="div-container picF">
-        <Row className="fix-row">
-          <Col lg={6}></Col>
-          <Col lg={6} style={{ marginTop: '150px' }} >
-            <h1 style={{ color: 'black', textAlign: 'center' }}>Tráfico orgánico en aumento</h1>
-            <h5 className="subtitle-first-container" style={{ color: 'black', lineHeight: '39px' }}> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...
-                    Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...</h5>
-          </Col>
-        </Row>
-      </div> */}
-
-
-      {/* <div className="div-container picZ">
-        <Row className="fix-row">
-          <h1 style={{ color: 'white', textAlign: 'center' }}>Business intelligence</h1>
-          <Col lg={1}></Col>
-          <Col lg={6} style={{ marginTop: '100px' }} >
-            <h5 className="subtitle-first-container" style={{ color: 'white', lineHeight: '39px' }}> Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...
-                    Haz crecer tu negocio con opciones de pago y
-                envíos locales! Ahorra dinero, vende más y cumple
-                    tu sueño de crear tu propia Tienda Online...</h5>
-          </Col>
-          <Col lg={5} className="pic-first-margin" >
-            <img src={imagen5} className="pic-first" style={{ height: '400px', width: '400px' }} />
-          </Col>
-        </Row>
-      </div> */}
-
-
       <div className="div-container-card">
         <Row className="fix-row">
           <Col lg={6}>
@@ -233,7 +244,6 @@ function App() {
               </div>
               <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon.</p>
               <a> <p className="read-more"> Leer más</p> </a>
-
             </div>
           </Col>
         </Row>
@@ -253,7 +263,7 @@ function App() {
           </Col>
         </Row>
       </div>
-    </div>
+    </div >
   );
 }
 

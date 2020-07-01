@@ -61,7 +61,7 @@
 }
 .picz-title{
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   font-weight: 700;
 }
@@ -211,9 +211,38 @@ font-size:18px;
     color: black;
      height: 600px;
 }
+.title-module-content {
+  margin-top:-30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.div-content {
+  cursor:pointer;
+  border-width: 0 0 1px;
+  border-color: darkgray;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+.p-content {
+  font-size: 30px;
+  text-align: left;
+}
+.conditional-pictures{
+  margin-top: 100px;
+  border-radius:5px;
+}
 
+.conditional-pictures-div {
+  height: 500px;
+  width:100% ;
+}
+
+.col-conditional-pictures{
+  text-align: center;
+}
 .grey-container {
-  width:102% !important;
+  width:100% !important;
   margin-top:0px;
 }
 .div-digital {
