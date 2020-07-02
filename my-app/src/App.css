@@ -24,7 +24,7 @@
 }
 .div-container {
   width:100% !important;
-  height:700px ;
+  height:700px !important ;
 }
 .div-container-card {
   width:100% !important;
@@ -56,6 +56,12 @@
   width:1400px;
   height:700px;
 }
+.col-center {
+  text-align: center;
+}
+.picture-system {
+  margin-top:20px;
+}
 .container-system {
   background: #E8E8E8 !important;
 }
@@ -72,6 +78,13 @@
    margin-top: 34px;
     color: white ;
 }
+.subtitle-first-container {
+  text-align: center;
+}
+.div-container {
+  height:initial;
+}
+
 .picC-subtitle {
   font-size: 25px;
   margin-top: 34px;
@@ -307,6 +320,92 @@ border-color:transparent;
   text-align: center;
   margin-top: 30px;
 }
+
+
+@media only screen and (max-width: 960px) {
+  .background-black {
+    padding: 20px;
+    width: 100%;
+    background: black;
+    color: black;
+    height: 600px;
+    margin-top: 12px;
+}
+.amazon-p {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 49px;
+}
+.header-p{
+  display:none;
+}
+.header-bottom {
+  display:none;
+}
+.grey-container {
+  width: 100% !important;
+  margin-top: 17px;
+}
+  .input-footer {
+    width:100px;
+    }
+  .div-payment-space {
+    width: 93px !important;
+}
+.logos-p {
+  padding:0px;
+}
+.div-payment { 
+  padding:0px;
+}
+.marketing-picture {
+  margin-top: -136px;
+}
+.digital-picture {
+  width: 286px;
+}
+.business-p {
+  line-height: 54px;
+  font-size:39px;
+}
+.p-content {
+  text-align: center;
+}
+.title-first-container { 
+  text-align: center;
+}
+.marketing-logo {
+  width: 317px;
+}
+.div-container-card {
+  height:initial;
+}
+.div-container {
+  height:initial !important;
+}
+.background-orange {
+  padding:0px;
+  height:480px;
+}
+
+  .conditional-pictures-div {
+display:none !important;
+  }
+  .picture-system {
+    width: 348px;
+    height: 200px;
+    margin-bottom: 41px !important;
+}
+  .header-logo {
+    width: 355px;
+    height: 134px;
+}
+.pic-first {
+  display:none;
+}
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
