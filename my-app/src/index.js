@@ -6,11 +6,13 @@ import * as serviceWorker from './serviceWorker';
 import './fonts/Oranienbaum.ttf';
 import './fonts/Dubiel.ttf';
 import './fonts/InaiMathi-MN.ttc';
+import { BrowserRouter } from 'react-router-dom'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+        <App />
+    </BrowserRouter>,
   document.getElementById('root')
 );
 serviceWorker.unregister();
