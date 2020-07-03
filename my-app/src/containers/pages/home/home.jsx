@@ -27,8 +27,6 @@ import catalogModule from '../../../assets/catalog-module.png';
 import financialmodule from '../../../assets/financial-module.png';
 import marketing2 from '../../../assets/marketing.svg';
 import marketing3 from '../../../assets/ecommerce.png';
-import { Route, Switch } from 'react-router-dom'
-
 
 function Home() {
 
@@ -145,22 +143,18 @@ function Home() {
         <div className="div-container picZ">
           <Row className="fix-row">
             <h1 className="picz-title"> Acelera tu crecimiento de ventas.</h1>
-            <Col md={2}>  </Col>
-            <Col md={8}>
+            <Col md={12}>
               <h5 className="picz-subtitle">
                  Desde tus redes sociales linkea tus historias al a la página del producto a promocionar 
                  y en instantes empieza a recibir pagos desde dispositivos móviles.
               </h5>
             </Col>
-            <Col md={2}>  </Col>
           </Row>
-          <Row className="fix-row">
-            <Col md={3}>  </Col>
-            <Col md={6}>
-              <img src={imagen4} className="marketing-picture" />
+            <Col md={12} style={{textAlign:'center'}}>
+                <div style={{width:'100%',height:'400px',textAlign:'center'}}> 
+              <img src={imagen4}  className="marketing-picture" />
+              </div>
             </Col>
-            <Col md={3}>  </Col>
-          </Row>
         </div>
         <div className="div-container picC">
             <h1 className="picC-title"> Empieza a recibir pagos internacionales. </h1>

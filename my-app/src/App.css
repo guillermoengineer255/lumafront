@@ -157,8 +157,9 @@ font-weight: 700;
 font-size:18px;
 }
 .marketing-picture {
-  width:100%;
-  margin-top:-245px;
+  width:50%;
+  margin-top:-200px;
+  text-align: center;
 }
 
 .pic-first-margin {
@@ -360,6 +361,7 @@ border-color:transparent;
   padding:0px;
 }
 .marketing-picture {
+  width:100%;
   margin-top: -136px;
 }
 .digital-picture {
