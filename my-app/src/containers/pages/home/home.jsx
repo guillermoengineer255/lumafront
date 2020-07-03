@@ -143,10 +143,10 @@ function Home() {
         <div className="div-container picZ">
           <Row className="fix-row">
             <h1 className="picz-title"> Acelera tu crecimiento de ventas.</h1>
-            <Col md={12}>
+            <Col md={12} style={{textAlign:'center'}}>
               <h5 className="picz-subtitle">
-                 Desde tus redes sociales linkea tus historias al a la página del producto a promocionar 
-                 y en instantes empieza a recibir pagos desde dispositivos móviles.
+                 Desde tus redes sociales linkea tus historias a la página del producto a promocionar 
+                 y en instantes empieza a recibir pagos en bolívares como en dolares desde dispositivos móviles.
               </h5>
             </Col>
           </Row>
@@ -157,7 +157,9 @@ function Home() {
             </Col>
         </div>
         <div className="div-container picC">
+          <div> 
             <h1 className="picC-title"> Empieza a recibir pagos internacionales. </h1>
+            </div>
             <Col md={2}>  </Col>
             <Col md={8}>
               <h5 className="picC-subtitle"> 
@@ -178,6 +180,9 @@ function Home() {
         <div className="div-container-card">
             <Col sm={12} lg={6}>
               <div className="background-grey">
+              <p className="logos-p">  Nuestra plataforma está construida con las tecnologias que utilizan las mejores
+                empresas del mundo. </p>
+                <a> <p className="read-more"> Leer más</p> </a>
                 <div className="div-logos">
                   <img src={uber} className="paypal-zelle-uber-picture div-payment-space" />
                   <img src={amazon} className="visa-american-picture div-payment-space" />
@@ -189,38 +194,37 @@ function Home() {
                   <img src={twitter} className="master-picture div-payment-space" />
                   <img src={whatsapp} className="master-picture div-payment-space" />
                 </div>
-                <p className="logos-p">  Nuestra plataforma está construida con las tecnologias que utilizan las mejores
-                empresas del mundo. </p>
-                <a> <p className="read-more"> Leer más</p> </a>
+               
               </div>
             </Col>
             <Col sm={12} lg={6} >
               <div className="background-orange">
+              <p className="business-p"> Marketing Digital</p>
+                <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={marketing2} className="marketing-logo" />
                 </div>
-                <p className="business-p"> Marketing Digital</p>
-                <a > <p className="read-more"> Leer más</p> </a>
               </div>
             </Col>
         </div>
         <div className="div-container-card">
             <Col sm={12} lg={6} >
               <div className="background-black">
+              <p className="business-p padding-business-intelligence" > Business Intelligence</p>
+                <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={business} className="business-picture" />
                 </div>
-                <p className="business-p padding-business-intelligence" > Business Intelligence</p>
-                <a > <p className="read-more"> Leer más</p> </a>
+               
               </div>
             </Col>
             <Col sm={12} lg={6}>
               <div className="background-grey grey-container">
+              <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon.</p>
+                <a> <p className="read-more"> Leer más</p> </a>
                 <div className="div-digital">
                   <img src={amazon2} className="digital-picture" />
                 </div>
-                <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon.</p>
-                <a> <p className="read-more"> Leer más</p> </a>
               </div>
             </Col>
         </div>
