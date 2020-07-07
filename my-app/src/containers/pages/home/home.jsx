@@ -230,8 +230,7 @@ function Home() {
         </div>
         <div className="demo-container">
             <Col sm={12} lg={12}>
-            <p style={{textAlign:'center',
-            fontSize:'50px',color:'white',fontWeight:'700',padding:'220px 100px 20px 100px'}}>Transforma tu 
+            <p className="orange-title">Transforma tu 
             bodegón o supermercado en tienda online y recibe ingresos las 24 horas del día en moneda
             nacional y extranjera.</p> 
             </Col>

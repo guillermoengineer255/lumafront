@@ -30,6 +30,13 @@
   width:100% !important;
   height:618px ;
 }
+
+.orange-title {
+  font-Size:50px;
+  color:white;font-Weight:700;
+  padding:220px 100px 20px 100px;
+  text-align: center;
+}
 .picA{
   background-image: url("./assets/rightone.jpg");
 }
@@ -342,6 +349,11 @@ border-color:transparent;
 
 @media only screen and (max-width: 960px) {
 
+  .orange-title {
+    font-Size:35px;
+    color:white;font-Weight:700;
+    padding:115px 20px 20px 20px;
+  }
   .p-sub-content {
     text-align: center;
   }
