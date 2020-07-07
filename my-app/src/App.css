@@ -28,7 +28,7 @@
 }
 .div-container-card {
   width:100% !important;
-  height:630px ;
+  height:618px ;
 }
 .picA{
   background-image: url("./assets/rightone.jpg");
@@ -151,6 +151,10 @@
   width: 450px;
   height:450px;
 }
+.p-sub-content {
+  font-size:17px;
+  text-align: left;
+}
 .header-p {
 color:white ;
 cursor:pointeR;
@@ -160,7 +164,7 @@ font-size:18px;
 }
 .marketing-picture {
   width:50%;
-  margin-top:-290px;
+  margin-top:0px;
   text-align: center;
 }
 
@@ -325,9 +329,22 @@ border-color:transparent;
   text-align: center;
   margin-top: 30px;
 }
+.footer-container {
+  width:100% !important;
+  height:300px;
+}
+.demo-container {
+  width:100% !important;
+  height:700px;
+  background: #ff7500;
+}
 
 
 @media only screen and (max-width: 960px) {
+
+  .p-sub-content {
+    text-align: center;
+  }
   .subtitle-first-container {
    
     text-align: center;
@@ -371,7 +388,7 @@ border-color:transparent;
 }
 .marketing-picture {
   width:100%;
-  margin-top: -136px;
+  margin-top: 0px;
 }
 .digital-picture {
   width: 286px;

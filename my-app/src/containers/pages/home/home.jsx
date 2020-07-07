@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import imagen2 from '../../../assets/secondmarket.png';
-import imagen4 from '../../../assets/4market.png';
+import imagen4 from '../../../assets/media-marketing.png';
 import '../../../App.css';
 import paypal from '../../../assets/paypal-seeklogo.com.svg';
 import mastercard from '../../../assets/mastercard-seeklogo.com.svg';
@@ -31,7 +31,11 @@ import marketing3 from '../../../assets/ecommerce.png';
 function Home() {
 
     const clickButton = () => {
-      window.scrollTo({ top: 2000, behavior: "smooth" })
+      window.scrollTo({ top: 1200, behavior: "smooth" })
+    }
+
+    const clickContactUs = () => {
+      window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"})
     }
     const showOrderModuleFunction = () => {
       setShowOrder(true);
@@ -74,21 +78,20 @@ function Home() {
                 </a>
               </Col>
               <Col md={2} >
-                <p className="header-p" onClick={() => clickButton()}>Canales de Venta</p></Col>
-              <Col md={1} >
-                <p className="header-p" onClick={() => clickButton()}> Vitrina </p> </Col>
-              <Col md={1} >
-              </Col>
+                <p className="header-p" onClick={() => clickContactUs()}>Canales de Venta</p></Col>
               <Col md={2} >
-                <button className="header-bottom"> Inscribete gratis </button>
+                <p className="header-p" onClick={() => clickButton()}> ¿Qué ofrecemos? </p> </Col>
+              
+              <Col md={2} >
+                {/* <button className="header-bottom"> Inscribete gratis </button> */}
               </Col>
             </Row>
           </header>
             <Col sm={12} md={1} >
             </Col>
             <Col sm={12} md={6} className="margin-title">
-              <h1 className="title-first-container">Plataforma E-commerce para empresas de consumo masivo.</h1>
-              <h5 className="subtitle-first-container"> Únete hoy a nuestro arbol para crecer y competir con los grandes en la era digital.
+              <h1 className="title-first-container">Plataforma E-commerce para empresas de consumo masivo en Venezuela.</h1>
+              <h5 className="subtitle-first-container"> Empieza a vender online recibiendo pagos en divisa extranjera.
               </h5>
             </Col>
             <Col sm={12} md={5} className="pic-first-margin">
@@ -108,26 +111,27 @@ function Home() {
             </Col>
             <Col md={5}>
               <div onClick={() => showOrderModuleFunction()} className="div-content">
-                <p className="p-content"><strong> Order management</strong></p>
-                <p>Puedes visualizar a travez del módulo de ordenes
-                  toda la informacion de las ordenes de compras emitidas por los clientes.
+                <p className="p-content"><strong> Administración de ordenes.</strong></p>
+                <p className="p-sub-content">Puedes visualizar a traves de este módulo
+                  toda la información de las órdenes de compras emitidas por los clientes para no perder ningún detalle de los pedidos de tus clientes.
               </p>
               </div>
               <div onClick={() => showWebModuleFunction()} className="div-content">
-                <p className="p-content"><strong>Web management</strong></p>
-                <p>Administra toda la página principal de tu comercio electronico, de manera sencilla
-                  e intuitiva desde el módulo web.
+                <p className="p-content"><strong>Web autoadministrable.</strong></p>
+                <p className="p-sub-content">Administra toda la página principal de tu comercio electrónico de manera sencilla,
+                   haciendo cambios desde imágenes hasta que productos mostrar desde el módulo web.
               </p>
               </div>
               <div onClick={() => showCatalogFunction()} className="div-content">
-                <p className="p-content"><strong>Catalog management</strong></p>
-                <p>Gestiona todos tus producto, desde la imagen que tendrá en la web, hasta el precio en distintas divisas
+                <p className="p-content"><strong>Manejo de catálogo de productos.</strong></p>
+                <p className="p-sub-content">Gestiona todos tus productos que se mostrará desde la imagen que tendrá en la web, hasta el precio en distintas divisas.
               </p>
               </div>
               <div onClick={() => showFinancialFunction()} className="div-content">
-                <p className="p-content"><strong>Financial management</strong></p>
-                <p>Visualiza y gestiona todos
-                   los pagos que emitan los clientes desde transferencias internacionales, Zelle y hasta pagos en bolívares.
+                <p className="p-content"><strong>Administración financiera.</strong></p>
+                <p className="p-sub-content">Visualiza y gestiona todos
+                   los pagos que emitan los clientes desde transferencias internacionales, pagos con tarjetas de debito del extranjero, pagos con tarjetas de crédito internacional, 
+                    Zelle y hasta pagos en bolívares.
               </p>
               </div>
             </Col>
@@ -145,7 +149,7 @@ function Home() {
             <h1 className="picz-title"> Acelera tu crecimiento de ventas.</h1>
             <Col md={12} style={{textAlign:'center'}}>
               <h5 className="picz-subtitle">
-                 Desde tus redes sociales linkea tus historias a la página del producto a promocionar 
+                 Desde tus redes sociales vincula tus historias a la página del producto a promocionar 
                  y en instantes empieza a recibir pagos en bolívares como en dolares desde dispositivos móviles.
               </h5>
             </Col>
@@ -164,7 +168,8 @@ function Home() {
             <Col md={8}>
               <h5 className="picC-subtitle"> 
               En la plataforma Lumarketo puedes configurar tus módulos de pagos para empezar a recibir
-              pagos con tarjetas internacionales, Zelle y pagos en Bolivares. Sin limitaciones para los metodos de pagos electrónicos.
+              pagos de tarjetas  de débito del extranjero, pagos con tarjeta de crédito internacional, transferencias en
+               Zelle y pagos en Bolivares. Sin limitaciones para los métodos de pagos electrónicos.
               </h5>
               <div className="div-payment">
                 <img src={bolivares} className="bs-picture" />
@@ -180,8 +185,7 @@ function Home() {
         <div className="div-container-card">
             <Col sm={12} lg={6}>
               <div className="background-grey">
-              <p className="logos-p">  Nuestra plataforma está construida con las tecnologias que utilizan las mejores
-                empresas del mundo. </p>
+              <p className="logos-p amazon-p" style={{fontSize:'40px',padding:'0px'}}>Nuestra plataforma a la vanguardia  de las mejores empresas del mundo.</p>
                 <a> <p className="read-more"> Leer más</p> </a>
                 <div className="div-logos">
                   <img src={uber} className="paypal-zelle-uber-picture div-payment-space" />
@@ -190,16 +194,12 @@ function Home() {
                   <img src={netflix} className="visa-american-picture div-payment-space" />
                   <img src={instagram} className="instagram-logo div-payment-space" />
                   <img src={walmart} className="walmart-logo  div-payment-space" />
-                  <img src={apple} className="master-picture div-payment-space" />
-                  <img src={twitter} className="master-picture div-payment-space" />
-                  <img src={whatsapp} className="master-picture div-payment-space" />
                 </div>
-               
               </div>
             </Col>
             <Col sm={12} lg={6} >
               <div className="background-orange">
-              <p className="business-p"> Marketing Digital</p>
+              <p className="business-p"> Marketing Digital.</p>
                 <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={marketing2} className="marketing-logo" />
@@ -210,7 +210,7 @@ function Home() {
         <div className="div-container-card">
             <Col sm={12} lg={6} >
               <div className="background-black">
-              <p className="business-p padding-business-intelligence" > Business Intelligence</p>
+              <p className="business-p padding-business-intelligence" > Business Intelligence.</p>
                 <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={business} className="business-picture" />
@@ -228,17 +228,36 @@ function Home() {
               </div>
             </Col>
         </div>
-        <div className="div-container picG">
-            <h1 ></h1>
-            <Col sm={12} lg={1}></Col>
-            <Col sm={12} lg={4}  >
-              <p className="footer-p">Empieza ahora</p>
+        <div className="demo-container">
+            <Col sm={12} lg={12}>
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'50px',color:'white',fontWeight:'700',padding:'220px 100px 20px 100px'}}>Transforma tu 
+            bodegón o supermercado en tienda online y recibe ingresos las 24 horas del día en moneda
+            nacional y extranjera.</p> 
             </Col>
-            <Col sm={12} lg={7} >
-              <div className="div-row-footer">
-                <input className="input-footer" placeholder="Ingresa tu direccion de email" />
-                <button value="Comienza ahora" name="dcdscd" className="button-footer">Comienza ahora </button>
-              </div>
+            <Col sm={12} lg={12} style={{textAlign:'center'}}>
+            <button style={{textAlign:'center',width:'250px',height:'40px',color:'black',borderRadius:'5px',textTransform:'uppercase',background:'white',fontSize:'20px',fontWeight:'700',borderColor:'transparent'}}>Solicite una demo</button>
+            </Col>
+           
+        </div>
+        <div className="footer-container">
+            <Col sm={12} lg={4}>
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'30px',color:'black',fontWeight:'700'}}>Contactanos.</p>
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'20px',color:'black',fontWeight:'400'}}> Venezuela +58 424-5189469</p>
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'20px',color:'black',fontWeight:'400'}}> Chile +56 958765629</p>
+            </Col>
+            <Col sm={12} lg={4}  >
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'30px',color:'black',fontWeight:'700'}}>Producto</p>
+            <p style={{textAlign:'center',cursor:'pointer',
+            fontSize:'20px',color:'black',fontWeight:'400'}}>Plataforma Ecommerce y tienda online.</p>
+            </Col>
+            <Col sm={12} lg={4} >
+            <p style={{textAlign:'center',cursor:'pointer',fontSize:'30px',color:'black',fontWeight:'700'}}>Empleo.</p>
+
             </Col>
         </div>
       </div >
