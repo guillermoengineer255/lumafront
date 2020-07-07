@@ -207,8 +207,8 @@ function Home() {
               </div>
             </Col>
         </div>
-        <div className="div-container-card">
-            <Col sm={12} lg={6} >
+        <div className="div-container-card" style={{marginBottom:'20px'}}>
+            <Col sm={12} lg={6} style={{padding:'17px'}} >
               <div className="background-black">
               <p className="business-p padding-business-intelligence" > Business Intelligence.</p>
                 <a > <p className="read-more"> Leer más</p> </a>
@@ -218,7 +218,7 @@ function Home() {
                
               </div>
             </Col>
-            <Col sm={12} lg={6}>
+            <Col sm={12} lg={6} style={{padding:'17px'}}>
               <div className="background-grey grey-container">
               <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon.</p>
                 <a> <p className="read-more"> Leer más</p> </a>
@@ -230,7 +230,7 @@ function Home() {
         </div>
         <div className="demo-container">
             <Col sm={12} lg={12}>
-            <p style={{textAlign:'center',cursor:'pointer',
+            <p style={{textAlign:'center',
             fontSize:'50px',color:'white',fontWeight:'700',padding:'220px 100px 20px 100px'}}>Transforma tu 
             bodegón o supermercado en tienda online y recibe ingresos las 24 horas del día en moneda
             nacional y extranjera.</p> 
