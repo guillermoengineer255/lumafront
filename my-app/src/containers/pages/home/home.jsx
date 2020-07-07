@@ -242,22 +242,28 @@ function Home() {
         </div>
         <div className="footer-container">
             <Col sm={12} lg={4}>
+              <div style={{padding:'100px'}}> 
             <p style={{textAlign:'center',cursor:'pointer',
             fontSize:'30px',color:'black',fontWeight:'700'}}>Contactanos.</p>
             <p style={{textAlign:'center',cursor:'pointer',
             fontSize:'20px',color:'black',fontWeight:'400'}}> Venezuela +58 424-5189469</p>
             <p style={{textAlign:'center',cursor:'pointer',
             fontSize:'20px',color:'black',fontWeight:'400'}}> Chile +56 958765629</p>
+            </div>
             </Col>
-            <Col sm={12} lg={4}  >
+            <Col sm={12} lg={4}>
+            <div style={{padding:'100px'}}> 
+
             <p style={{textAlign:'center',cursor:'pointer',
             fontSize:'30px',color:'black',fontWeight:'700'}}>Producto</p>
             <p style={{textAlign:'center',cursor:'pointer',
             fontSize:'20px',color:'black',fontWeight:'400'}}>Plataforma Ecommerce y tienda online.</p>
+          </div>
             </Col>
             <Col sm={12} lg={4} >
+              <div style={{padding:'100px'}}> 
             <p style={{textAlign:'center',cursor:'pointer',fontSize:'30px',color:'black',fontWeight:'700'}}>Empleo.</p>
-
+            </div>
             </Col>
         </div>
       </div >
