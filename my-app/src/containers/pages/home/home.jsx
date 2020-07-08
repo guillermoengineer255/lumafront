@@ -90,8 +90,8 @@ function Home() {
             <Col sm={12} md={1} >
             </Col>
             <Col sm={12} md={6} className="margin-title">
-              <h1 className="title-first-container">Plataforma E-commerce para empresas de consumo masivo en Venezuela.</h1>
-              <h5 className="subtitle-first-container"> Empieza a vender online recibiendo pagos en divisa extranjera.
+              <h1 className="title-first-container">Plataforma E-commerce para empresas de consumo masivo en Venezuela</h1>
+              <h5 className="subtitle-first-container"> Empieza a vender online recibiendo pagos en divisa extranjera
               </h5>
             </Col>
             <Col sm={12} md={5} className="pic-first-margin">
@@ -105,7 +105,7 @@ function Home() {
         </div>
         <div className="div-container container-system">
             <Col md={12} >
-              <h1 className="title-module-content">La solución para vender online. </h1>
+              <h1 className="title-module-content">La solución para vender online </h1>
             </Col>
             <Col md={1}>
             </Col>
@@ -146,7 +146,7 @@ function Home() {
         </div>
         <div className="div-container picZ">
           <Row className="fix-row">
-            <h1 className="picz-title"> Acelera tu crecimiento de ventas.</h1>
+            <h1 className="picz-title"> Acelera tu crecimiento de ventas</h1>
             <Col md={12} style={{textAlign:'center'}}>
               <h5 className="picz-subtitle">
                  Desde tus redes sociales vincula tus historias a la página del producto a promocionar 
@@ -162,7 +162,7 @@ function Home() {
         </div>
         <div className="div-container picC">
           <div> 
-            <h1 className="picC-title"> Empieza a recibir pagos internacionales. </h1>
+            <h1 className="picC-title"> Empieza a recibir pagos internacionales </h1>
             </div>
             <Col md={2}>  </Col>
             <Col md={8}>
@@ -185,7 +185,7 @@ function Home() {
         <div className="div-container-card">
             <Col sm={12} lg={6}>
               <div className="background-grey">
-              <p className="logos-p amazon-p" style={{fontSize:'40px',padding:'0px'}}>Nuestra plataforma a la vanguardia  de las mejores empresas del mundo.</p>
+              <p className="logos-p amazon-p" style={{fontSize:'40px',padding:'0px'}}>Nuestra plataforma a la vanguardia  de las mejores empresas del mundo</p>
                 <a> <p className="read-more"> Leer más</p> </a>
                 <div className="div-logos">
                   <img src={uber} className="paypal-zelle-uber-picture div-payment-space" />
@@ -199,7 +199,7 @@ function Home() {
             </Col>
             <Col sm={12} lg={6} >
               <div className="background-orange">
-              <p className="business-p"> Marketing Digital.</p>
+              <p className="business-p"> Marketing Digital</p>
                 <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={marketing2} className="marketing-logo" />
@@ -210,7 +210,7 @@ function Home() {
         <div className="div-container-card" style={{marginBottom:'20px'}}>
             <Col sm={12} lg={6} style={{padding:'17px'}} >
               <div className="background-black">
-              <p className="business-p padding-business-intelligence" > Business Intelligence.</p>
+              <p className="business-p padding-business-intelligence" > Business Intelligence</p>
                 <a > <p className="read-more"> Leer más</p> </a>
                 <div className="div-business-picture">
                   <img src={business} className="business-picture" />
@@ -220,7 +220,7 @@ function Home() {
             </Col>
             <Col sm={12} lg={6} style={{padding:'17px'}}>
               <div className="background-grey grey-container">
-              <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon.</p>
+              <p className="logos-p amazon-p" > Tú comercio en la nube de Amazon</p>
                 <a> <p className="read-more"> Leer más</p> </a>
                 <div className="div-digital">
                   <img src={amazon2} className="digital-picture" />
@@ -232,7 +232,7 @@ function Home() {
             <Col sm={12} lg={12}>
             <p className="orange-title">Transforma tu 
             bodegón o supermercado en tienda online y recibe ingresos las 24 horas del día en moneda
-            nacional y extranjera.</p> 
+            nacional y extranjera</p> 
             </Col>
             <Col sm={12} lg={12} style={{textAlign:'center'}}>
             <button style={{textAlign:'center',width:'250px',height:'40px',color:'black',borderRadius:'5px',textTransform:'uppercase',background:'white',fontSize:'20px',fontWeight:'700',borderColor:'transparent'}}>Solicite una demo</button>
