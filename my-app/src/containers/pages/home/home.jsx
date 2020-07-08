@@ -111,24 +111,24 @@ function Home() {
             </Col>
             <Col md={5}>
               <div onClick={() => showOrderModuleFunction()} className="div-content">
-                <p className="p-content"><strong> Administración de ordenes.</strong></p>
+                <p className="p-content"><strong> Administración de ordenes</strong></p>
                 <p className="p-sub-content">Puedes visualizar a traves de este módulo
                   toda la información de las órdenes de compras emitidas por los clientes para no perder ningún detalle de los pedidos de tus clientes.
               </p>
               </div>
               <div onClick={() => showWebModuleFunction()} className="div-content">
-                <p className="p-content"><strong>Web autoadministrable.</strong></p>
+                <p className="p-content"><strong>Web autoadministrable</strong></p>
                 <p className="p-sub-content">Administra toda la página principal de tu comercio electrónico de manera sencilla,
                    haciendo cambios desde imágenes hasta que productos mostrar desde el módulo web.
               </p>
               </div>
               <div onClick={() => showCatalogFunction()} className="div-content">
-                <p className="p-content"><strong>Manejo de catálogo de productos.</strong></p>
+                <p className="p-content"><strong>Manejo de catálogo de productos</strong></p>
                 <p className="p-sub-content">Gestiona todos tus productos que se mostrará desde la imagen que tendrá en la web, hasta el precio en distintas divisas.
               </p>
               </div>
               <div onClick={() => showFinancialFunction()} className="div-content">
-                <p className="p-content"><strong>Administración financiera.</strong></p>
+                <p className="p-content"><strong>Administración financiera</strong></p>
                 <p className="p-sub-content">Visualiza y gestiona todos
                    los pagos que emitan los clientes desde transferencias internacionales, pagos con tarjetas de debito del extranjero, pagos con tarjetas de crédito internacional, 
                     Zelle y hasta pagos en bolívares.
